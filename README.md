@@ -102,13 +102,13 @@ The states of the missions are automatically saved in the states file.
 
 # Dialog file formatting
 
-For a detailed explained you should watch the [video of CodeParade](https://www.youtube.com/watch?v=DlL_20x0QH8)
+For a detailed explaination you should watch the [video of CodeParade](https://www.youtube.com/watch?v=DlL_20x0QH8)
 
 ## Entry points and events
 
 Entry points - which are the point where part of a dialogue begins - are written using a # at the start of the line, entry points always have a "\_number" at the end of the line, \_1 is the called when you access this entry point for the first time, then if a \_2 exists, it will be called the second time... the last one is repeated each time you enter the entry point
 > Note that when starting the dialog, you must specify the entry point without the "\_number", for the example below, the entry point is "bob", the number is concatenated automatically
-```Java
+```scss
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 00:28
 
 #bob_1
@@ -132,7 +132,7 @@ A pause if performed after each line of text, pending user input or automatic sk
 Underscores (\_) are not displayed in the final dialog, instead they are used as small pause in the text, more underscores means more longer pause.
 Vertical lines (|) are used to group multiple characters together, so they are displayed at the same time and not character by character.
 
-```
+```scss
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 01:24
 
 #bob_1
@@ -153,7 +153,7 @@ Branching can be done easily using this formatting: `$entry_point Text to displa
 
 You can also navigate to another entry point using the event syntax with an #: `[#entry_point]`
 
-```
+```scss
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 01:55
 
 #bob_1
@@ -196,7 +196,7 @@ dialogInstance.choose(index);
 To switch the narrator between multiple characters, you use the same syntax as an event but with the index of the character instead of an event name, \[0\] is always the initial narrator.
 Switching between narrator also change which the character that must receive the events.
 
-```
+```scss
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 02:52
 
 #alice_1
@@ -227,7 +227,7 @@ You can pass any Object as a character, such as a simple String for a name, or a
 It works just like narrator switching works, except that the format is \[narrator_index>character_index\], for example \[0>1\] means that the narrator is now character 0, and character 0 is looking at character 1 (to simulate a real discussion)
 When switching to a narrator using simple format \[0\], the narrator is facing the player.
 
-```
+```scss
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 03:27
 
 #alice_1
@@ -256,7 +256,7 @@ The entry_point is the initial entry point, working even if no mission is enable
 Then if mission1 is enabled, it will be concatenated to the entry_point, so if you try to start a dialog at `entry_point`, it will be converted to `entry_point_mission1`
 Note that the missions are written from the lowest priority to the highest from left to right, so if mission2 is enabled, it will be used no matter if mission1 is enabled or not.
 
-```
+```scss
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 04:10
 
 @bob mission_complete friend_in_trouble
@@ -282,7 +282,7 @@ If a mission has the name of another entry point of the same dialog file, it can
 In the example below, the entry point "bob" has a mission called "alice" which is another entry point, so when the player will trigger the dialog at "#alice", the mission will be enabled, and now starting a dialog at "#bob" will redirect to "#bob_alice".
 > Do not forget that the "\_1" at the end of an entry point is added automatically, there is no need to specify it when starting a dialog in your code. The only place you need to specify it is in the dialog file
 
-```
+```scss
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 05:03
 
 @bob alice
@@ -302,7 +302,7 @@ In the example below, the entry point "bob" has a mission called "alice" which i
 
 Initially, it was created to handle Unity components, but since we're not using Unity, that doesn't make sense. So it works just like a simple event, the only difference is that a value is specified after ":", so the format is `event_name:value`
 
-```
+```scss
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 05:33
 
 #bob_1
