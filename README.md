@@ -150,6 +150,7 @@ Dialog.UNDERSCORE_PAUSE_MILLIS = 150;
 ## Branching
 
 Branching can be done easily using this formatting: `$entry_point Text to display`
+
 You can also navigate to another entry point using the event syntax with an #: `[#entry_point]`
 
 ```
