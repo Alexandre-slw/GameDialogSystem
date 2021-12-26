@@ -1,0 +1,21 @@
+// Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 01:55
+
+#bob_1
+[Talk1][e_Confused]What's your most anticipated game?
+$bob_hyperbolica Hyperbolica
+$bob_somethingelse Something else
+$bob_dontplay I don't play video games
+#bob_hyperbolica_1
+[e_Happy]Aw yeah.__ You're on my wavelength buddy.
+#bob_hyperbolica_2
+[e_Annoyed]Listen, I get it.
+[ShakeHead]No need to lick my boots.
+[e_Blink]
+#bob_somethingelse_1
+[e_Shocked]Oh...____ [LockDown1]I see.[e_KindaSad]
+Well,___ [Idle]that's okay..._____ I guess.
+[e_Sad][Talk1]I'm not crying, I swear!
+#bob_dontplay_1
+[e_Blink]Wait, [ShakeHead]that doesn't make sense.
+[Shrug]I'll just ask you again.
+[#bob]

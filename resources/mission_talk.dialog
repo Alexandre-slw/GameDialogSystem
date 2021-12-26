@@ -1,0 +1,13 @@
+// Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 05:03
+
+@bob alice
+#bob_1
+[e_Closed][CrossArmTalk]I won't tell you anything unless you know the secret password.
+[Idle]
+#bob_alice_1
+[Talk1]I see you know the password.
+[Talk3]Very well,___ I will help your quest.
+
+#alice_1
+[e_Suspicious][Suspicious]The secret password is____ "abc123".
+[e_Blink][Idle]

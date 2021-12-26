@@ -1,0 +1,13 @@
+// Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 00:28
+
+#bob_1
+[Talk1]Hi, my name is Bob.
+[e_Happy][nod1]I can talk with multiple lines[Giggle] and use different emotions.
+[HeadTilt][e_Excited]Pretty cool, huh?[Idle]
+[e_Blink]
+#bob_2
+[Talk4][e_Shocked]This is the second thing that I say.
+[e_Blink]
+#bob_3
+[Talk2]This is the last thing I say, [Thinking]so it will repeat each time you talk to me.
+[Idle]

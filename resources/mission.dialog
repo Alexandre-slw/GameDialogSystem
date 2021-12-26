@@ -1,0 +1,17 @@
+// Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 04:10
+
+@bob mission_complete friend_in_trouble
+#bob_1
+[Talk1]I need you to find my lost lucky penny.
+[Talk2]Come back when you find it.
+#bob_mission_complete_1
+[e_Bliss][Happy1]Hey you found it!
+[e_Excited]Thanks so much!
+[e_Blink]
+#bob_mission_complete_2
+[e_Happy]Thanks again buddy.
+[e_Blink]
+#bob_friend_in_trouble_1
+[e_KindaSad][Talk1]Hey, you really need to help my friend!
+[e_Shocked][Talk4]It's important to advance the plot!
+[e_Blink]

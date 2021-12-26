@@ -1,0 +1,17 @@
+// Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 02:52
+
+#alice_1
+[Talk1][e_Sultry]Hey, are you that famous person?
+[1][Shocked][e_Star]Whoa, it IS you.
+[2][Happy1][e_Bliss]Hey can I have your autograph?
+[0][e_KindaSad][Nervous]Actually, I wanted to ask you something...[Idle]
+[1][e_Excited]No no, me first! Please.[e_Heart]
+[Idle][e_Blink][2][e_Excited]No, me! me!
+[Idle][e_Blink][0][e_Annoyed]Sorry about my friends, [Suspicious1]they get like this sometimes.
+[Idle][e_Blink]
+
+#bob_1
+Hi, I'm Bob.
+
+#charlie_1
+Hi, I'm Charlie.

@@ -1,0 +1,18 @@
+// Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 03:27
+
+#alice_1
+[Talk2][e_Excited]Hey I just saw the funniest GIF today.
+[e_Blink][1>0][e_Bored][Talk1]Um actually,__ it's pronounced like "JIF"
+[0>1][e_Annoyed]Yeah, but no one actually says that[Shrug] do they ?
+[0>2][1>2][2>0]I hate to be a contrarian, but...
+[Talk1]I've always just said it like the letters 'G' 'I' 'F'.
+[0>1][2>1][1>2][Talk4][e_Angry]That's like literally the worst thing you could do!
+[1>0][2>0][0>1][Talk1]You take this way to seriously.
+[1][e_Blink][2][0][Talk3][e_Blink]Anyway, I don't want to get you all wrapped up in this debate.
+So I won't even get your opinion.
+
+#bob_1
+Hi, I'm Bob.
+
+#chalie_1
+Hi, I'm Charlie.

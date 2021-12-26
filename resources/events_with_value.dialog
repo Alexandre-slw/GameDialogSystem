@@ -1,0 +1,14 @@
+// Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 05:33
+
+#bob_1
+[e_KindaSad][Nervous]Hey, I know we like..._____ just met.
+[Talk2]But I have something___ dramatic to tell you.
+[Talk1]So dramatic,____[FadeAudioEvent:0] that we needed to stop the music.
+[Talk3]You see...
+[e_Closed][LookDown1]I'm...
+...
+[Talk4][e_Happy][FadeAudioEvent:1]...just kidding!
+[Shrug][e_Excited]Yeah, nothing wrong here.
+[Giggle][e_Bliss]Haha, got you.
+[e_Blink]
+
