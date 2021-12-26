@@ -127,7 +127,7 @@ Entry points - which are the point where part of a dialogue begins - are written
 Between the \[ \] there is events, it is mainly used to set the emotions of the current narrator, as said previously, you must implement your own events for your game.
 A pause if performed after each line of text, pending user input or automatic skip.
 
-## small pause and word grouping
+## Small pause and word grouping
 
 Underscores (\_) are not displayed in the final dialog, instead they are used as small pause in the text, more underscores means more longer pause.
 Vertical lines (|) are used to group multiple characters together, so they are displayed at the same time and not character by character.
@@ -147,10 +147,11 @@ Underscore pause time can be set using the code below, default is 150 ms
 Dialog.UNDERSCORE_PAUSE_MILLIS = 150;
 ```
 
-## branching
+## Branching
 
-Branching can be done easily using this formatting:
-`$entry_point Text to display`
+Branching can be done easily using this formatting: `$entry_point Text to display`
+You can also navigate to another entry point using the event syntax with an #: `[#entry_point]`
+
 ```
 // Example taken from the CodeParade video (https://youtu.be/DlL_20x0QH8) at 01:55
 
