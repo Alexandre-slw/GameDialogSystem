@@ -265,17 +265,19 @@ public class Dialog implements Serializable {
     /**
      * Exit the dialog
      */
-    public void exit(boolean clearChoices) {
+    public void exit(boolean clearAll) {
         for (DialogPart part : this.dialogPartComponents.values()) {
             part.reset();
         }
 
         this.currentKey = "";
-        if (clearChoices) this.currentChoices.clear();
         this.currentDialogPart = null;
-        this.handler = null;
+        if (clearAll) {
+            this.currentChoices.clear();
+            this.handler = null;
+            this.characters = new Object[0];
+        }
 
-        this.characters = new Object[0];
         this.narratorID = 0;
 
         this.saveStates();
