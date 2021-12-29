@@ -63,7 +63,7 @@ public class Dialog implements Serializable {
         this.dialogPartCount.clear();
         this.dialogPartComponents.clear();
         this.missions.clear();
-        this.exit();
+        this.exit(true);
 
         this.dialogStateSaver.load();
 
@@ -256,7 +256,7 @@ public class Dialog implements Serializable {
                 this.dialogPartCount.put(this.currentKey, count + 1);
                 this.dialogStateSaver.set("#" + this.currentKey, String.valueOf(count + 1));
             }
-            this.exit();
+            this.exit(false);
         }
 
         return this.currentDialogPart == null;
@@ -265,13 +265,13 @@ public class Dialog implements Serializable {
     /**
      * Exit the dialog
      */
-    public void exit() {
+    public void exit(boolean clearChoices) {
         for (DialogPart part : this.dialogPartComponents.values()) {
             part.reset();
         }
 
         this.currentKey = "";
-        this.currentChoices.clear();
+        if (clearChoices) this.currentChoices.clear();
         this.currentDialogPart = null;
         this.handler = null;
 

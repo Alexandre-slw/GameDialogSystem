@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GameDialogSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GameDialogSystem_jar</output-path>
+    <root id="archive" name="GameDialogSystem.jar">
+      <element id="module-output" name="GameDialogSystem" />
+    </root>
+  </artifact>
+</component>
